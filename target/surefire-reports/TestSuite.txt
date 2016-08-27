@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.609 sec <<< FAILURE!
+(gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests)  Time elapsed: 0.406 sec  <<< FAILURE!
+java.lang.AssertionError
+	at gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplication(ApplicationDaoTest.java:20)
+
+(gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError
+	at gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplicationByStudent(ApplicationDaoTest.java:26)
+

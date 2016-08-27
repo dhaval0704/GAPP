@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="6332" started-at="2016-03-05T14:30:51Z" finished-at="2016-03-05T14:30:57Z">
+    <groups>
+      <group name="ApplicationDaoTest">
+        <method signature="ApplicationDaoTest$ApplicationDaoTests.getApplication()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" name="getApplication" class="gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests"/>
+        <method signature="ApplicationDaoTest$ApplicationDaoTests.getApplicationByStudent()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" name="getApplicationByStudent" class="gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests"/>
+        <method signature="DepartmentDaoTest.getDepartments()[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" name="getDepartments" class="gapp.model.dao.DepartmentDaoTest"/>
+      </group> <!-- ApplicationDaoTest -->
+      <group name="UserDaoTest">
+        <method signature="UserDaoTest$UserDaoTests.getUser()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" name="getUser" class="gapp.model.dao.UserDaoTest$UserDaoTests"/>
+        <method signature="UserDaoTest$UserDaoTests.getUsers()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" name="getUsers" class="gapp.model.dao.UserDaoTest$UserDaoTests"/>
+      </group> <!-- UserDaoTest -->
+    </groups>
+    <test name="Command line test" duration-ms="6332" started-at="2016-03-05T14:30:51Z" finished-at="2016-03-05T14:30:57Z">
+      <class name="gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="springTestContextBeforeTestClass" is-config="true" duration-ms="31" started-at="2016-03-05T06:30:51Z" finished-at="2016-03-05T06:30:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method name="springTestContextPrepareTestInstance" test-instance-name="" signature="springTestContextPrepareTestInstance()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" is-config="true" status="PASS" duration-ms="5590" finished-at="2016-03-05T06:30:56Z" started-at="2016-03-05T06:30:51Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="180" started-at="2016-03-05T06:30:56Z" finished-at="2016-03-05T06:30:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="FAIL" signature="getApplication()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="getApplication" duration-ms="397" started-at="2016-03-05T06:30:56Z" finished-at="2016-03-05T06:30:57Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplication(ApplicationDaoTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:197)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApplication -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="springTestContextAfterTestMethod" is-config="true" duration-ms="17" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplicationByStudent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="FAIL" signature="getApplicationByStudent()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="getApplicationByStudent" duration-ms="17" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplicationByStudent(ApplicationDaoTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:197)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApplicationByStudent -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="springTestContextAfterTestMethod" is-config="true" duration-ms="4" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests.getApplicationByStudent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests@4232c52b]" test-instance-name="" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gapp.model.dao.ApplicationDaoTest$ApplicationDaoTests -->
+      <class name="gapp.model.dao.DepartmentDaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" test-instance-name="" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method name="springTestContextPrepareTestInstance" test-instance-name="" signature="springTestContextPrepareTestInstance()[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" is-config="true" status="PASS" duration-ms="6" finished-at="2016-03-05T06:30:57Z" started-at="2016-03-05T06:30:57Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" test-instance-name="" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.DepartmentDaoTest.getDepartments()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getDepartments()[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" test-instance-name="" name="getDepartments" duration-ms="8" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDepartments -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" test-instance-name="" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.DepartmentDaoTest.getDepartments()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gapp.model.dao.DepartmentDaoTest@1877ab81]" test-instance-name="" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gapp.model.dao.DepartmentDaoTest -->
+      <class name="gapp.model.dao.UserDaoTest$UserDaoTests">
+        <test-method name="springTestContextPrepareTestInstance" test-instance-name="" signature="springTestContextPrepareTestInstance()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" is-config="true" status="PASS" duration-ms="14" finished-at="2016-03-05T06:30:57Z" started-at="2016-03-05T06:30:57Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.UserDaoTest$UserDaoTests.getUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getUser()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="getUser" duration-ms="3" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="springTestContextAfterTestMethod" is-config="true" duration-ms="9" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.UserDaoTest$UserDaoTests.getUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="4" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.UserDaoTest$UserDaoTests.getUsers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getUsers()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="getUsers" duration-ms="8" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsers -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void gapp.model.dao.UserDaoTest$UserDaoTests.getUsers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:gapp.model.dao.UserDaoTest$UserDaoTests@305fd85d]" test-instance-name="" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-03-05T06:30:57Z" finished-at="2016-03-05T06:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- gapp.model.dao.UserDaoTest$UserDaoTests -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
